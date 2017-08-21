@@ -47,3 +47,25 @@ Atuador['M'] = fuzz.trimf(Atuador.universe, [-0.3, 0, 0.3])
 Atuador['A'] = fuzz.trimf(Atuador.universe, [0, 0.3, 1])
 Atuador['MA'] = fuzz.trimf(Atuador.universe, [0.3, 1, 3])
 Atuador['MMA'] = fuzz.trapmf(Atuador.universe, [1, 3, 10, 10])
+
+"""
+To help understand what the membership looks like, use the ``view`` methods.
+"""
+
+# You can see how these look with .view()
+PressaoSuccao['M'].view()
+"""
+.. image:: PLOT2RST.current_figure
+"""
+Erro['M'].view()
+"""
+.. image:: PLOT2RST.current_figure
+"""
+Atuador['M'].view()
+"""
+.. image:: PLOT2RST.current_figure
+
+
+Fuzzy rules
+-----------
+"""
